@@ -3,12 +3,14 @@
     src: url("/font/persian-alkharashi52.ttf");
 }
 
+/* navbar */
 
 .navbar-custom{
     background: linear-gradient(90deg , #7869EC  , #0D0073 37%);
     display: flex;
     justify-content: space-around;
     direction: rtl;
+    box-shadow: 0px 2px 20px 6px rgb(15, 0, 51);
     
 }
 .nav-custom{
