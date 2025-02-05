@@ -8,26 +8,42 @@
 .navbar-custom{
     background: linear-gradient(90deg , #7869EC  , #0D0073 37%);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     direction: rtl;
     box-shadow: 0px 2px 20px 6px rgb(15, 0, 51);
     
 }
 .nav-custom{
    font-family: nav_font;
+   margin: 0 20px;
    
+}
+.contact-id{
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-id:hover{
+
+    
+    border: 1px solid rgb(232, 232, 239);
+    
 }
 .img-icon{
     width: 20px;
     fill: white !important;  
 }
 .img-icon-custom{
+    height: 25px;
     width: 25px;
     fill: white !important;  
 }
 .a-nav{
     align-self: center;
     margin-left: 20px;
+}
+.logo{
+    font-family: nav_font;
+    color: white;
 }
 
 /*  jumbotron */
@@ -37,7 +53,7 @@
     width: 100%;
     height: 70vh;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-bottom: 0;
     background-color: #0D0073;
 }
@@ -102,6 +118,8 @@
 
 .contaners{
     background: linear-gradient(180deg , #200054 ,  #4A4553 );
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
