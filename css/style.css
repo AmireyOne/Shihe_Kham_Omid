@@ -419,6 +419,17 @@
     .box-galery{
         padding: 10px;
     }
+    .ad-respo{
+        display: block !important;
+        
+    }
+    .personal-add{
+        height: 75px;
+    }
+    .addd{
+        margin-top: 0 !important;
+        padding-top: 10px;
+    }
 }
 
 @media (max-width:909px ) and (min-width:680px){
