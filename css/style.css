@@ -46,6 +46,9 @@
     color: white;
 }
 
+
+
+
 /*  jumbotron */
 
 .blur-container {
@@ -267,4 +270,172 @@
 .a-add{
     text-decoration: none !important;
     color: white;
+}
+
+
+/* mobile */
+
+
+
+/* nabar mobile */
+.navbar-custom-mobile{
+    background: linear-gradient(90deg , #7869EC  , #0D0073 37%);
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    box-shadow: 0px 2px 20px 6px rgb(15, 0, 51);
+    display: none;
+}
+.nav-custom-mobile{
+    font-family: nav_font;
+    margin: 0 20px
+}
+.menu-btn{
+    box-shadow: 0px 0px 5px 1px  white;
+    background-color: #cfe2f3;
+    padding: 0;
+    background: url('../img/Menu.png') center/cover no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    
+}
+.img-menu{
+    width: 40px;
+}
+.menu-btn:hover{
+    box-shadow: 0px 0px 5px 1px  rgb(33, 1, 61);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+}
+
+/* منو */
+.menu {
+    position: fixed;
+    top: 70px;
+    right: -250px; /* ابتدا مخفی */
+    width: 250px;
+    height: 100%;
+    background: #340289;
+    color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: nav_font;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px double #b595da;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #a85deb;
+}
+
+/* کلاس فعال برای باز شدن */
+.menu.active {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width:680px) {
+    .navbar-custom{
+        display: none;
+    }
+    .navbar-custom-mobile{
+        display: flex;
+    }
+    .name-shop{
+        font-size: 60px;
+    }
+    .content{
+        display: block !important;
+    }
+
+    .text-shop{
+        font-size: 30px;
+    }
+    .text-shop-div{
+        max-width: 230px;
+        padding-top: 50px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .name-shop-div{
+        max-width: 400px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .text-info-us{
+        font-size: 30px ;
+        padding: 15px;
+    }
+    .work-us{
+        font-size: 30px;
+    }
+    .box{
+        padding: 20px;
+    }
+    .text-size{
+        font-size: 30px;
+    }
+    .text-size-small{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .box-contact{
+        padding: 10px;
+        padding-right: 40px;
+    }
+    .map{
+        height: 330px;
+    }
+    .ad{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:909px ) and (min-width:680px){
+    .logo{
+        display: none;
+    }
+    .name-shop{
+        font-size: 100px;
+    }
+    .text-shop{
+        font-size: 30px;
+    }
+    .text-shop-div{
+        max-width: 230px;
+        padding-top: 50px;
+    }
+    .name-shop-div{
+        max-width: 400px;
+    }
+    .text-info-us{
+        font-size: 40px ;
+    }
 }
