@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amireyone.github.io/Shihe_Kham_Omid/sitemap.xml
